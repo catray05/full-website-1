@@ -1,0 +1,427 @@
+/* start header */
+/* start navbar */
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+@media screen {
+    
+}
+h1{
+    font-size: 40pt;
+    width: 40%;
+    margin: auto;
+}
+h2{
+    font-size: 30pt;
+}
+h3{
+    font-size: 25pt;
+}
+p{
+    font-size: 10pt;
+    opacity: 0.7;
+    line-height: 1.5;
+}
+h1, h2, h3, p, a{
+    font-family: "Mona Sans", sans-serif;
+    padding: 7px 0px;
+    text-wrap: wrap;
+}
+header nav{
+    display: flex;
+    color: black;
+    font-family: "Mona Sans", sans-serif;
+    background-color: #F9C265;
+    font-weight: bold;
+    font-size: 12px;
+}
+header nav ul{
+    display: flex;
+    margin-right: auto;
+}
+header nav ul li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+}
+header nav div.header_logo{
+    margin: auto;
+    display: flex;
+}
+header nav div.header_logo div.logo{
+    width: 18px;
+    height: auto;
+    display: flex;
+}
+header nav div.header_logo div.logo img{
+    width: 100%;
+    object-fit: contain;
+}
+header nav div.header_logo a{
+    text-decoration: none;
+    color: black;
+}
+header nav div.login_signup{
+    display: flex;
+    margin-left:auto;
+    padding: 15px;
+}
+header nav div.login_signup a{
+    text-decoration: none;
+    text-wrap: nowrap;
+    color: black;
+    padding: 10px;
+    
+}
+header nav div.login_signup .login{
+
+}
+header nav div.login_signup a.signup{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 7px 14px;
+    margin: auto;
+    color: white;
+    background-color: black;
+}
+header nav div.login_signup a.signup:hover{
+    background-color:#F9C265;
+    color: black;
+    
+}
+/* end navbar */
+/* end header */
+/* start main */
+main{
+
+}
+/* start hero */
+main section.hero{
+    
+}
+main section.hero div.hero_top{
+    display: flex;
+    padding: 30px;
+    background-color: #F9C265;
+}
+main section.hero div.hero_top div.hero_topleft{
+    margin-right: auto;
+}
+main section.hero div.hero_top div.hero_topright{
+
+}
+main section.hero div.hero_top div.hero_topright a{
+    font-size: 7pt;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+main section.hero div.hero_top div.hero_topright a:hover{
+    color: #F9C265;
+    background-color: black;
+}
+main section.hero img{
+    width: 100%;
+    height: auto;
+}
+span.black_highlight{
+    color: #F9C265;
+    background-color: black;
+    border: 1px solid #F9C265;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    padding: 4px;
+    border-radius: 40px;
+    margin-top: 5px;
+}
+
+main section.hero ul{
+    display: flex;
+    margin:50px auto;
+    width: 60%;
+    background-color: white;
+    justify-content: space-around;
+}
+main section.hero ul li{
+    list-style: none;
+    text-align: center;
+}
+main section.hero ul li h2{
+    text-align: center;
+    font-size: 30pt;
+}
+main section.hero ul li p{
+    text-align: center;
+}
+main section.hero div.hero_bottom{
+    display: flex;
+    align-items: center;
+    background-color: #FFF6E5;
+    width: 100%;
+    margin: auto;
+}
+main section.hero div.hero_bottom div.hero_bottomleft{
+    width: 50%;
+}
+main section.hero div.hero_bottom div.hero_bottomright{
+    width: 30%;
+    text-wrap: wrap;
+}
+span.highlight{
+    background-color: #F9C265;
+    color: black;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    padding: 4px;
+    border-radius: 40px;
+    margin-top: 5px;
+    border: 1px solid black;
+}
+/* end hero */
+/* start features */
+main section.features{
+    background-color: #FCF4EC;    
+}
+main section.features div.all_features{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+main section.features div.all_features > div.feature{
+    width: 25%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 7px 14px;
+    margin: 20px;
+}
+main section.features div.features_main{
+    width: 70%;
+}
+main section.features div.features_main div.feature{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    text-wrap: wrap;
+    line-height: 1.5;
+    padding: 20px 40px; 
+}
+main section.features div.features_main h2{
+    margin: auto;
+    width: 100%;
+    margin: 10px;
+}
+span.yellow_italic{
+    color: #F9C265;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+main section.features div.features_main a{
+    font-size: 7pt;
+    text-decoration: none;
+    color: black;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin: 10px;
+    background-color: #F9C265;
+}
+main section.features div.features_main a:hover{
+    color: #F9C265;
+    background-color: black;
+    border: 1px solid #F9C265;
+}
+
+main section.features div.feature img{
+    width: 50%;
+    margin: 20px;
+}
+/* end features */
+/* start courses */
+main section.courses{
+    width: 100%;
+    margin: auto;
+    color: white;
+    background-color: black;
+    padding: 50px;
+}
+main section.courses h2{
+    text-align: center;
+}
+main section.courses div.all_courses{
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: space-evenly;
+}
+main section.courses div.all_courses div.course{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+main section.courses div.all_courses div.course img{
+    width: 70%;
+    margin: auto;
+    display: block;
+}
+main section.courses div.all_courses div.course h3{
+    margin: 10px;
+}
+main section.courses div.all_courses div.course a{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 7px 14px;
+    margin: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: smaller;
+}
+main section.courses div.all_courses div.course a:hover{
+    background-color: #F9C265;
+}
+/* end courses */
+/* start learning */
+main section.learning{    
+    width: 100%;
+    height: auto;
+}
+main section.learning div.learning_top{    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main section.learning div.learning_top div.learning_topleft{    
+    width: 30%;
+}
+main section.learning div.learning_top div.learning_topleft h2{
+    text-wrap: wrap;
+}
+main section.learning div.learning_top div.learning_topleft ul{
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+main section.learning div.learning_top div.learning_topleft ul li{
+    display: flex;
+    align-items: center;
+    font-size: smaller;
+    font-family: "Mona Sans", sans-serif;
+}
+main section.learning div.learning_middle{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    background-color: #F9C265;
+    margin: auto;
+    border-radius: 20px;
+    transform: translate(0px, 125px);
+    
+}
+span.black_italic{
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+main section.learning div.learning_middle img{
+    border-radius: 20px;
+}
+main section.learning div.learning_middle div.learning_midright a{
+    font-size: 7pt;
+    text-decoration: none;
+    color: #F9C265;
+    background-color: black;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+main section.learning div.learning_bottom{
+    background-color: #FFF6E5;
+    padding: 150px 0px;
+}
+main section.learning div.learning_bottom div.bottom{
+    width: 25%;
+    line-height: 1.5;
+    text-align: center;
+    text-wrap: wrap;
+    margin: auto;
+}
+main section.learning div.learning_bottom div.bottom ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+main section.learning div.learning_bottom div.bottom a{
+    background-color: black;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: flex;
+}
+/* end learning */
+/* end main */
+/* start footer */
+footer{
+    width: 100%; 
+    background-color: #FFF6E5;
+}
+footer div.all_footer{
+    color: white;
+    background-color: black;
+    display: flex;
+    width: 70%;
+    margin: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    justify-content: space-evenly;
+    padding: 50px;
+    font-family: "Mona Sans", sans-serif;
+}
+footer div.all_footer a{
+    text-decoration: none;
+    color: white;
+    font-family: "Mona Sans", sans-serif;
+}
+footer div.all_footer div.footer_left{
+    
+}
+footer div.all_footer div.footer_left div.footer_lefttop{
+    padding-bottom:100px;
+    text-wrap: wrap;
+    width: 70%;
+}
+footer div.all_footer div.footer_left div.footer_lefttop div.footer_logo{
+    display: flex;
+    width: 20px;
+    height: auto;
+}
+footer div.all_footer div.footer_left div.footer_lefttop div.footer_logo img{
+    width: 100%;
+    object-fit: contain;
+}
+footer div.all_footer table{
+    padding-bottom:100px;
+}
+footer div.footer_right{
+    font-size: smaller;
+}
+footer div.all_footer div.footer_rightbottom{
+    text-align: right;
+    
+}
+/* end footer */
