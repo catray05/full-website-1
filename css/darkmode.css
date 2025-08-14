@@ -27,25 +27,66 @@ h1, h2, h3, p, a{
 }
 header nav{
     display: flex;
-    color: black;
+    color: #F9C265;
     font-family: "Mona Sans", sans-serif;
-    background-color: #ad8647;
+    background-color: black;
     font-weight: bold;
     font-size: 12px;
 }
-header nav ul{
+header nav div.navbar{
     display: flex;
-    margin-right: auto;
-}
-header nav ul li{
-    display: flex;
-    justify-content: flex-start;
     align-items: center;
 }
-header nav ul li a{
+header nav div.navbar div#navmenu{
+    display: flex;
+    gap: 10px;
+}
+header nav div.navbar a{
     text-decoration: none;
-    color: black;
+    color: #F9C265;
     padding: 10px 20px;
+}
+button.bars, button#close2{
+    display: none;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+@media screen and (max-width: 768px){
+    div.navbar{
+        position: relative;
+        justify-content: space-between;
+    }
+    div.navbar button.bars{
+        display: block;
+        color: #F9C265;
+    }
+    div.navbar button#close2{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25px;
+        height: 25px;
+        color: #F9C265;
+    }
+    header nav div.navbar div#navmenu{
+        display: none;
+        top:100%;
+        left: 0;
+        position: absolute;
+        background-color: black;
+        flex-direction: column;
+        padding: 20px 0px;
+        z-index: 100;
+    }
+    header nav div.navbar div#navmenu a{
+        padding: 10px;
+    }
 }
 header nav div.header_logo{
     margin: auto;
@@ -62,7 +103,7 @@ header nav div.header_logo div.logo img{
 }
 header nav div.header_logo a{
     text-decoration: none;
-    color: black;
+    color: #F9C265;
 }
 header nav div.login_signup{
     display: flex;
@@ -71,12 +112,15 @@ header nav div.login_signup{
 }
 header nav div.login_signup #mode{
     border: 0px;
-    background-color: #ad8647;
+    background-color: black;
+}
+.svg-icon{
+    color: #F9C265;
 }
 header nav div.login_signup a{
     text-decoration: none;
     text-wrap: nowrap;
-    color: black;
+    color: #F9C265;
     padding: 10px;
     
 }
@@ -89,7 +133,7 @@ header nav div.login_signup a.signup{
     background-color: black;
 }
 header nav div.login_signup a.signup:hover{
-    background-color:#ad8647;
+    background-color:#F9C265;
     color: black;
 }
 header nav div.login_signup a.login{
@@ -98,11 +142,57 @@ header nav div.login_signup a.login{
 /* end navbar */
 /* end header */
 /* start main */
+div.customize div.custombutton button{
+    border: 1px black solid;
+    transform: rotate(-90deg);
+    width: fit-content;
+    border-radius: 20px;
+    padding: 7px;
+    position: fixed;
+    right: 0;
+    top: 50%;
+}
+button#close{
+    border: 0;
+    background-color: black;
+}
+div#menu{
+    width: 25%;
+    position: fixed;
+    right: 0;
+    background-color: black;
+    color: white;
+    z-index: 100;
+    height: 100%;
+    display: none;
+}
+div#menu div.colors div.primary{
+    border: 1px grey solid;
+    border-radius: 25px;
+    width: 30%;
+    margin: auto;
+    padding: 10px;
+}
+div#menu div.colors div.primary div.primarycolor{
+    display: flex;
+    justify-content: space-between;
+}
+button#close i{
+    color: white;
+}
+div.F9C265{
+    display: flex;
+    border-radius: 50px;
+    background-color: #F9C265;
+    width: 25px;
+    height: 25px;
+}
 /* start hero */
 main section.hero div.hero_top{
     display: flex;
     padding: 30px;
-    background-color: #ad8647;
+    background-color: black;
+    color: #F9C265;
 }
 main section.hero div.hero_top div.hero_topleft{
     margin-right: auto;
@@ -110,24 +200,24 @@ main section.hero div.hero_top div.hero_topleft{
 main section.hero div.hero_top div.hero_topright a{
     font-size: 7pt;
     text-decoration: none;
-    color: black;
-    border: 1px solid black;
+    color: #F9C265;
+    border: 1px solid #F9C265;
     padding: 7px 14px;
     border-radius: 20px;
     font-weight: bold;
 }
 main section.hero div.hero_top div.hero_topright a:hover{
-    color: #ad8647;
-    background-color: black;
+    color: black;
+    background-color: #F9C265;
 }
 main section.hero img{
     width: 100%;
     height: auto;
 }
 span.black_highlight{
-    color: #ad8647;
-    background-color: black;
-    border: 1px solid #ad8647;
+    color: black;
+    background-color: #F9C265;
+    border: 1px solid black;
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 100;
@@ -138,7 +228,7 @@ span.black_highlight{
 main section.hero div.popular{
     width: 100%;
     background-color: black;
-    color: white;
+    color: #F9C265;
 
 }
 main section.hero ul{
@@ -161,9 +251,10 @@ main section.hero ul li p{
 main section.hero div.hero_bottom{
     display: flex;
     align-items: center;
-    background-color:#c6beaf;
+    background-color:black;
     width: 100%;
     margin: auto;
+    color: #FFF6E5;
 }
 main section.hero div.hero_bottom div.hero_bottomleft{
     width: 50%;
@@ -173,7 +264,7 @@ main section.hero div.hero_bottom div.hero_bottomright{
     text-wrap: wrap;
 }
 span.highlight{
-    background-color: #ad8647;
+    background-color: #F9C265;
     color: black;
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
@@ -325,7 +416,8 @@ main section.learning div.learning_middle{
     display: flex;
     align-items: center;
     width: 50%;
-    background-color: #ad8647;
+    background-color: black;
+    color: #F9C265;
     margin: auto;
     border-radius: 20px;
     transform: translate(0px, 125px);
@@ -341,8 +433,8 @@ main section.learning div.learning_middle img{
 main section.learning div.learning_middle div.learning_midright a{
     font-size: 7pt;
     text-decoration: none;
-    color: #F9C265;
-    background-color: black;
+    color: black;
+    background-color: #F9C265;
     padding: 7px 14px;
     border-radius: 20px;
     font-weight: bold;

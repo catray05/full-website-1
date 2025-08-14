@@ -39,9 +39,8 @@ header nav div.navbar{
 }
 header nav div.navbar div#navmenu{
     display: flex;
-    gap: 10px;
 }
-header nav div.navbar a{
+header nav div.navbar div#navmenu a{
     text-decoration: none;
     color: black;
     padding: 10px 20px;
@@ -49,9 +48,10 @@ header nav div.navbar a{
 button.bars, button#close2{
     display: none;
     border: 0;
-    background: none;
-    cursor: pointer;
-    font-size: 16px;
+}
+button#close2{
+    margin-left: auto;
+    text-align: right;
 }
 @media screen and (max-width: 768px){
     div.navbar{
@@ -139,12 +139,12 @@ header nav div.login_signup a.login{
 /* end navbar */
 /* end header */
 /* start main */
-div.customize{
+/* div.customize{
     background-color: white;
     position: fixed;
     right: 0;
-    width: 25%;
-}
+    width: 15%;
+} */
 div.customize div.custombutton button{
     border: 1px black solid;
     transform: rotate(-90deg);
@@ -158,6 +158,34 @@ div.customize div.custombutton button{
 button#close{
     border: 0;
     background-color: white;
+}
+div#menu{
+    width: 25%;
+    position: fixed;
+    right: 0;
+    background-color: white;
+    z-index: 100;
+    height: 100%;
+    display: none;
+}
+div#menu div.colors div.primary{
+    border: 1px grey solid;
+    border-radius: 25px;
+    width: 30%;
+    margin: auto;
+    padding: 10px;
+}
+div#menu div.colors div.primary div.primarycolor{
+    display: flex;
+    justify-content: space-between;
+}
+
+div.F9C265{
+    display: flex;
+    border-radius: 50px;
+    background-color: #F9C265;
+    width: 25px;
+    height: 25px;
 }
 /* start hero */
 main section.hero div.hero_top{
